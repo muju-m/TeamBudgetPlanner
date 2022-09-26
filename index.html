@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Manager View</title>
+    <style>
+        th,
+        td,
+        p,
+        input {
+            font: 14px Verdana;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+    <script src="create_table.js"></script>
+</head>
+<body>
+    <H3>Add New Deal</H3>
+    <form>
+        <table style="width: 50%">
+            <tr>
+                <th><label>Client Name</label></th>
+                <td><input type="text" id="clientNameInput" required></td>
+            </tr>
+            <tr>
+                <th><label>Project Name</label></th>
+                <td><input type="text" id="projectNameInput" required="true" /></td>
+            </tr>
+            <tr>
+                <th><label>Project Manager</label></th>
+                <td><input type="text" id="projectManagerInput" required="true" /></td>
+            </tr>
+            <tr>
+                <th><label>Project Cost</label></th>
+                <td><input type="number" id="projectCostInput" required="true" /></td>
+            </tr>
+            
+        </table>
+        <br>
+        <input type="submit" onclick="AddNewDeal()" value="Save" />
+    </form>
+</body>
+</html>
